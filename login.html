@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In - MusicApp</title>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-900 text-white flex">
+    <div class="flex h-screen w-full">
+      <aside
+        class="w-64 bg-gray-800 p-5 flex flex-col h-full fixed top-0 left-0"
+      >
+        <h1 class="text-2xl font-bold ml-10 mt-5">MusicApp</h1>
+        <nav class="space-y-4 mt-40">
+          <a
+            href="/index.html"
+            class="block px-4 py-2 rounded hover:bg-gray-700"
+            >Home</a
+          >
+          <a
+            href="/search.html"
+            class="block px-4 py-2 rounded hover:bg-gray-700"
+            >Search</a
+          >
+          <a
+            href="/library.html"
+            class="block px-4 py-2 rounded hover:bg-gray-700"
+            >Library</a
+          >
+        </nav>
+      </aside>
+      <div class="flex-1 ml-64 flex flex-col items-center justify-center">
+        <h2 class="text-3xl font-bold mb-6">Log In</h2>
+        <form class="bg-gray-800 p-8 rounded-lg shadow-md w-96">
+          <div class="mb-4">
+            <label class="block mb-2">Email</label>
+            <input
+              type="email"
+              class="w-full p-2 rounded bg-gray-700 border border-gray-600"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="mb-7">
+            <label class="block mb-2">Password</label>
+            <input
+              type="password"
+              class="w-full p-2 rounded bg-gray-700 border border-gray-600"
+              placeholder="Enter your password"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-green-500 py-2 rounded hover:bg-green-600"
+          >
+            Log In
+          </button>
+        </form>
+        <p class="mt-4 text-gray-400">
+          Don't have an account?
+          <a href="/signup.html" class="text-green-400 underline">Sign Up</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

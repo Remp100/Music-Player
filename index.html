@@ -8,7 +8,6 @@
   </head>
   <body class="bg-gray-900 text-white flex">
     <div class="flex h-screen w-full">
-      <!-- Sidebar -->
       <aside
         class="w-64 bg-gray-800 p-5 flex flex-col h-full fixed top-0 left-0"
       >
@@ -30,11 +29,15 @@
             >Library</a
           >
         </nav>
-        <h2
-          class="text-lg font-semibold mt-20 mb-6 py-2 rounded hover:bg-gray-700 cursor-pointer"
-        >
-          <a href="/playlists.html">Playlists</a>
-        </h2>
+
+        <a href="/playlists.html">
+          <h2
+            class="text-lg font-semibold mt-20 mb-6 py-2 px-2 rounded hover:bg-gray-700 cursor-pointer"
+          >
+            Playlists
+          </h2>
+        </a>
+
         <ul class="space-y-4">
           <li>
             <a href="#" class="block px-4 py-2 rounded hover:bg-gray-700"
@@ -55,7 +58,6 @@
       </aside>
 
       <div class="flex-1 ml-64 flex flex-col">
-        <!-- Navbar -->
         <nav class="bg-gray-900 p-4 flex justify-end items-center">
           <div class="space-x-4">
             <a href="/premium.html" class="px-4 py-2 rounded hover:bg-gray-700"
@@ -71,8 +73,6 @@
             >
           </div>
         </nav>
-
-        <!-- Main Content -->
         <main class="flex-1 p-6 overflow-y-auto">
           <div class="grid grid-cols-5 gap-4 gap-y-20 mt-40">
             <div class="bg-gray-800 p-10 rounded-lg">Music 1</div>
@@ -89,16 +89,14 @@
         </main>
       </div>
     </div>
-
-    <!-- Music Player Bar -->
     <div
       class="fixed bottom-0 left-0 right-0 bg-emerald-900 p-4 flex justify-between items-center"
     >
       <div>Now Playing: Song Name</div>
       <div class="space-x-4">
-        <button class="px-3 py-2 bg-gray-700 rounded">⏮</button>
-        <button class="px-3 py-2 bg-gray-700 rounded">⏯</button>
-        <button class="px-3 py-2 bg-gray-700 rounded">⏭</button>
+        <button class="px-3 py-2 bg-gray-700 rounded cursor-pointer">⏮</button>
+        <button class="px-3 py-2 bg-gray-700 rounded cursor-pointer">⏯</button>
+        <button class="px-3 py-2 bg-gray-700 rounded cursor-pointer">⏭</button>
       </div>
     </div>
   </body>

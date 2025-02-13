@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Music Player</title>
+    <title>Music Player - Libary</title>
     <link href="./src/output.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-900 text-white flex">
     <div class="flex h-screen w-full">
+      <!-- Sidebar -->
       <aside
         class="w-64 bg-gray-800 p-5 flex flex-col h-full fixed top-0 left-0"
       >
@@ -15,11 +16,7 @@
           <h1 class="text-2xl font-bold ml-7 mt-5">Music Player</h1>
         </a>
         <nav class="space-y-4 mt-40">
-          <a
-            href="/"
-            class="block px-4 py-2 rounded hover:bg-gray-700 underline"
-            >Home</a
-          >
+          <a href="/" class="block px-4 py-2 rounded hover:bg-gray-700">Home</a>
           <a
             href="/search.html"
             class="block px-4 py-2 rounded hover:bg-gray-700"
@@ -27,11 +24,10 @@
           >
           <a
             href="/library.html"
-            class="block px-4 py-2 rounded hover:bg-gray-700"
+            class="block px-4 py-2 rounded hover:bg-gray-700 underline"
             >Library</a
           >
         </nav>
-
         <a href="/playlists.html">
           <h2
             class="text-lg font-semibold mt-20 mb-6 py-2 px-2 rounded hover:bg-gray-700 cursor-pointer"
@@ -39,7 +35,6 @@
             Playlists
           </h2>
         </a>
-
         <ul class="space-y-4">
           <li>
             <a href="#" class="block px-4 py-2 rounded hover:bg-gray-700"
@@ -59,7 +54,9 @@
         </ul>
       </aside>
 
+      <!-- Main Content -->
       <div class="flex-1 ml-64 flex flex-col">
+        <!-- Navbar -->
         <nav class="bg-gray-900 p-4 flex justify-end items-center">
           <div class="space-x-4">
             <a href="/premium.html" class="px-4 py-2 rounded hover:bg-gray-700"
@@ -75,18 +72,19 @@
             >
           </div>
         </nav>
+
+        <!-- Downloads Section -->
         <main class="flex-1 p-6 overflow-y-auto">
-          <h1 class="text-3xl font-bold text-center mb-6">Top 10</h1>
-          <!-- Music Cards Grid -->
-          <div class="grid grid-cols-5 gap-4 gap-y-20 mt-4">
-            <!-- Music Card 1 -->
+          <h2 class="text-3xl font-bold mb-6 mt-9 text-center">Downloads</h2>
+          <div class="grid grid-cols-5 gap-4">
+            <!-- Downloaded Song Card 1 -->
             <div
               class="bg-gray-800 p-4 rounded-lg flex flex-col items-center cursor-pointer transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
               <div class="relative w-full">
                 <img
                   src="https://i.ytimg.com/vi/ekr2nIex040/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLDOaiU5tOLayKpK4iWWoe-bvYZzRw"
-                  alt="Music 1"
+                  alt="Downloaded Song 1"
                   class="rounded-lg w-full object-cover"
                 />
                 <div
@@ -102,14 +100,14 @@
               </div>
             </div>
 
-            <!-- Music Card 2 -->
+            <!-- Downloaded Song Card 2 -->
             <div
               class="bg-gray-800 p-4 rounded-lg flex flex-col items-center cursor-pointer transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
               <div class="relative w-full">
                 <img
                   src="https://i.ytimg.com/vi/kPa7bsKwL-c/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBYnHMqF97Hn48rSyYfhIhgC26TNw"
-                  alt="Music 2"
+                  alt="Downloaded Song 2"
                   class="rounded-lg w-full object-cover"
                 />
                 <div
@@ -126,14 +124,14 @@
               </div>
             </div>
 
-            <!-- Music Card 3 -->
+            <!-- Downloaded Song Card 3 -->
             <div
               class="bg-gray-800 p-4 rounded-lg flex flex-col items-center cursor-pointer transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
               <div class="relative w-full">
                 <img
                   src="https://i.ytimg.com/vi/V9PVRfjEBTI/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBq0YCFfOomDLkuJZ8_GDKKs8p1ww"
-                  alt="Music 3"
+                  alt="Downloaded Song 3"
                   class="rounded-lg w-full object-cover"
                 />
                 <div
@@ -149,14 +147,14 @@
               </div>
             </div>
 
-            <!-- Music Card 4 -->
+            <!-- Downloaded Song Card 4 -->
             <div
               class="bg-gray-800 p-4 rounded-lg flex flex-col items-center cursor-pointer transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
               <div class="relative w-full">
                 <img
                   src="https://i.ytimg.com/vi/Oa_RSwwpPaA/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLBKxQQSaTNkGi5lRX4A_jPJI0jnqw"
-                  alt="Music 4"
+                  alt="Downloaded Song 4"
                   class="rounded-lg w-full object-cover"
                 />
                 <div
@@ -172,14 +170,14 @@
               </div>
             </div>
 
-            <!-- Music Card 5 -->
+            <!-- Downloaded Song Card 5 -->
             <div
               class="bg-gray-800 p-4 rounded-lg flex flex-col items-center cursor-pointer transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
               <div class="relative w-full">
                 <img
                   src="https://i.ytimg.com/vi/eVli-tstM5E/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLDJOzclBfeWlQf86sCV0_48E7UCEg"
-                  alt="Music 5"
+                  alt="Downloaded Song 5"
                   class="rounded-lg w-full object-cover"
                 />
                 <div
@@ -191,121 +189,6 @@
               <div class="mt-4 text-center">
                 <h3 class="font-bold text-lg">
                   Sabrina Carpenter - Espresso (Official Video)
-                </h3>
-              </div>
-            </div>
-
-            <!-- Music Card 6 -->
-            <div
-              class="bg-gray-800 p-4 rounded-lg flex flex-col items-center cursor-pointer transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-            >
-              <div class="relative w-full">
-                <img
-                  src="https://i.ytimg.com/vi/G7KNmW9a75Y/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLA3_881elXslLbMPrKGfQotIOKHlw"
-                  alt="Music 6"
-                  class="rounded-lg w-full object-cover"
-                />
-                <div
-                  class="absolute top-2 left-2 bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold"
-                >
-                  6
-                </div>
-              </div>
-              <div class="mt-4 text-center">
-                <h3 class="font-bold text-lg">
-                  Miley Cyrus - Flowers (Official Video)
-                </h3>
-              </div>
-            </div>
-
-            <!-- Music Card 7 -->
-            <div
-              class="bg-gray-800 p-4 rounded-lg flex flex-col items-center cursor-pointer transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-            >
-              <div class="relative w-full">
-                <img
-                  src="https://i.ytimg.com/vi/WcIcVapfqXw/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLD1wNAy-u7O0RrF-xF-ROXlOsMzzA"
-                  alt="Music 7"
-                  class="rounded-lg w-full object-cover"
-                />
-                <div
-                  class="absolute top-2 left-2 bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold"
-                >
-                  7
-                </div>
-              </div>
-              <div class="mt-4 text-center">
-                <h3 class="font-bold text-lg">
-                  Rema, Selena Gomez - Calm Down (Official Music Video)
-                </h3>
-              </div>
-            </div>
-
-            <!-- Music Card 8 -->
-            <div
-              class="bg-gray-800 p-4 rounded-lg flex flex-col items-center cursor-pointer transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-            >
-              <div class="relative w-full">
-                <img
-                  src="https://i.ytimg.com/vi/Qh8QwVYOSVU/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLCLDM5w8V8bZV7xKffVjddSDl2eAQ"
-                  alt="Music 8"
-                  class="rounded-lg w-full object-cover"
-                />
-                <div
-                  class="absolute top-2 left-2 bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold"
-                >
-                  8
-                </div>
-              </div>
-              <div class="mt-4 text-center">
-                <h3 class="font-bold text-lg">
-                  Teddy Swims - Bad Dreams (Official Music Video)
-                </h3>
-              </div>
-            </div>
-
-            <!-- Music Card 9 -->
-            <div
-              class="bg-gray-800 p-4 rounded-lg flex flex-col items-center cursor-pointer transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-            >
-              <div class="relative w-full">
-                <img
-                  src="https://i.ytimg.com/vi/IWKyykQBRKo/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLB8u8sRR3ekd7i4EmjOaXfu9KI03Q"
-                  alt="Music 9"
-                  class="rounded-lg w-full object-cover"
-                />
-                <div
-                  class="absolute top-2 left-2 bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold"
-                >
-                  9
-                </div>
-              </div>
-              <div class="mt-4 text-center">
-                <h3 class="font-bold text-lg">
-                  Billie Eilish - WILDFLOWER (BILLIE BY FINNEAS)
-                </h3>
-              </div>
-            </div>
-
-            <!-- Music Card 10 -->
-            <div
-              class="bg-gray-800 p-4 rounded-lg flex flex-col items-center cursor-pointer transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-            >
-              <div class="relative w-full">
-                <img
-                  src="https://i.ytimg.com/vi/Q2QC39mK0Y0/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLA0Uvz95ptyjYreA0FyH12RF2HyKQ"
-                  alt="Music 10"
-                  class="rounded-lg w-full object-cover"
-                />
-                <div
-                  class="absolute top-2 left-2 bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold"
-                >
-                  10
-                </div>
-              </div>
-              <div class="mt-4 text-center">
-                <h3 class="font-bold text-lg">
-                  D4M $loan - CUDI (Official Music Video)
                 </h3>
               </div>
             </div>

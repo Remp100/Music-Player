@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player - Premium</title>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-900 text-white flex">
+    <div class="flex h-screen w-full">
+      <aside
+        class="w-64 bg-gray-800 p-5 flex flex-col h-full fixed top-0 left-0"
+      >
+        <a href="/">
+          <h1 class="text-2xl font-bold ml-7 mt-5">Music Player</h1>
+        </a>
+        <nav class="space-y-4 mt-40">
+          <a href="/" class="block px-4 py-2 rounded hover:bg-gray-700">Home</a>
+          <a
+            href="/search.html"
+            class="block px-4 py-2 rounded hover:bg-gray-700"
+            >Search</a
+          >
+          <a
+            href="/library.html"
+            class="block px-4 py-2 rounded hover:bg-gray-700"
+            >Library</a
+          >
+        </nav>
+      </aside>
+
+      <div class="flex-1 ml-64 flex flex-col">
+        <nav class="bg-gray-900 p-4 flex justify-end items-center">
+          <div class="space-x-4">
+            <a href="/premium.html" class="px-4 py-2 rounded bg-emerald-900"
+              >Premium</a
+            >
+            <a href="/signup.html" class="px-4 py-2 rounded hover:bg-gray-700"
+              >Sign Up</a
+            >
+            <a
+              href="/login.html"
+              class="px-4 py-2 rounded bg-green-500 hover:bg-green-600"
+              >Log In</a
+            >
+          </div>
+        </nav>
+        <main class="flex-1 p-10 text-center">
+          <h1 class="text-4xl font-bold mb-10">Get Premium</h1>
+          <p class="text-lg mb-25">
+            Enjoy ad-free music, offline listening, and high-quality audio.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-gray-800 p-6 rounded-lg text-center">
+              <h2 class="text-2xl font-bold mb-6">Basic</h2>
+              <p class="mb-6">$4.99/month</p>
+              <ul class="text-sm mb-15">
+                <li>✓ Ad-supported</li>
+                <li>✓ Standard Audio Quality</li>
+              </ul>
+              <button class="px-4 py-2 bg-green-500 rounded hover:bg-green-600">
+                Choose Plan
+              </button>
+            </div>
+
+            <div
+              class="bg-gray-800 p-6 rounded-lg text-center border-2 border-green-500"
+            >
+              <h2 class="text-2xl font-bold mb-6">Premium</h2>
+              <p class="mb-6">$9.99/month</p>
+              <ul class="text-sm mb-9">
+                <li>✓ Ad-free listening</li>
+                <li>✓ Offline Mode</li>
+                <li>✓ High-Quality Audio</li>
+              </ul>
+              <button class="px-4 py-2 bg-green-500 rounded hover:bg-green-600">
+                Choose Plan
+              </button>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-lg text-center">
+              <h2 class="text-2xl font-bold mb-6">Family</h2>
+              <p class="mb-6">$14.99/month</p>
+              <ul class="text-sm mb-9">
+                <li>✓ Up to 6 accounts</li>
+                <li>✓ Ad-free listening</li>
+                <li>✓ Parental Controls</li>
+              </ul>
+              <button class="px-4 py-2 bg-green-500 rounded hover:bg-green-600">
+                Choose Plan
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
